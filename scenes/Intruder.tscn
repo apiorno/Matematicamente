@@ -1,0 +1,174 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Triangle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Circle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/BaseScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Square.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/Intruder.gd" type="Script" id=5]
+[ext_resource path="res://scenes/Rectangle.tscn" type="PackedScene" id=9]
+
+[node name="Intruder" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="BaseScene" parent="." instance=ExtResource( 3 )]
+
+[node name="Level1" type="Node2D" parent="."]
+position = Vector2( -218, 36 )
+
+[node name="Square" parent="Level1" instance=ExtResource( 4 )]
+position = Vector2( 450.963, 218.85 )
+
+[node name="Square2" parent="Level1" instance=ExtResource( 4 )]
+position = Vector2( 649, 214 )
+rotation = 0.733038
+
+[node name="Square3" parent="Level1" instance=ExtResource( 4 )]
+position = Vector2( 490.429, 361.678 )
+rotation = 1.309
+
+[node name="Triangle" parent="Level1" instance=ExtResource( 1 )]
+position = Vector2( 530.475, 253.556 )
+rotation = -1.0472
+
+[node name="Level2" type="Node2D" parent="."]
+visible = false
+position = Vector2( -174, 0 )
+
+[node name="Square" parent="Level2" instance=ExtResource( 4 )]
+position = Vector2( 600, 360 )
+rotation = 0.523599
+
+[node name="Circle" parent="Level2" instance=ExtResource( 2 )]
+position = Vector2( 455, 192 )
+
+[node name="Circle2" parent="Level2" instance=ExtResource( 2 )]
+position = Vector2( 615, 250 )
+
+[node name="Circle3" parent="Level2" instance=ExtResource( 2 )]
+position = Vector2( 455, 360 )
+
+[node name="Circle4" parent="Level2" instance=ExtResource( 2 )]
+position = Vector2( 320, 320 )
+
+[node name="Level3" type="Node2D" parent="."]
+visible = false
+position = Vector2( -248, -96 )
+
+[node name="Square" parent="Level3" instance=ExtResource( 4 )]
+position = Vector2( 650, 390 )
+rotation = 0.523599
+
+[node name="Triangle" parent="Level3" instance=ExtResource( 1 )]
+position = Vector2( 395, 360 )
+rotation = 3.14159
+
+[node name="Triangle2" parent="Level3" instance=ExtResource( 1 )]
+position = Vector2( 615, 477 )
+
+[node name="Triangle3" parent="Level3" instance=ExtResource( 1 )]
+position = Vector2( 680, 250 )
+rotation = 0.523599
+
+[node name="Triangle4" parent="Level3" instance=ExtResource( 1 )]
+position = Vector2( 518, 400 )
+rotation = 0.261799
+
+[node name="Triangle5" parent="Level3" instance=ExtResource( 1 )]
+position = Vector2( 530, 253 )
+rotation = 0.785398
+
+[node name="Level4" type="Node2D" parent="."]
+visible = false
+
+[node name="Square" parent="Level4" instance=ExtResource( 4 )]
+position = Vector2( 154.963, 168 )
+rotation = 0.523598
+
+[node name="Square2" parent="Level4" instance=ExtResource( 4 )]
+position = Vector2( 120.963, 350 )
+rotation = -0.261799
+
+[node name="Square3" parent="Level4" instance=ExtResource( 4 )]
+position = Vector2( 477, 263.35 )
+rotation = 1.309
+
+[node name="Square4" parent="Level4" instance=ExtResource( 4 )]
+position = Vector2( 323, 218.178 )
+rotation = 0.261799
+
+[node name="Square5" parent="Level4" instance=ExtResource( 4 )]
+position = Vector2( 258, 446 )
+
+[node name="Square6" parent="Level4" instance=ExtResource( 4 )]
+position = Vector2( 258, 320 )
+rotation = 0.785397
+
+[node name="Circle" parent="Level4" instance=ExtResource( 2 )]
+position = Vector2( 367, 369.75 )
+
+[node name="Level5" type="Node2D" parent="."]
+visible = false
+
+[node name="Rectangle" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 198.963, 124 )
+rotation = 0.261799
+
+[node name="Rectangle2" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 258, 260.5 )
+rotation = -1.309
+
+[node name="Rectangle3" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 367, 192 )
+rotation = 0.523598
+
+[node name="Rectangle4" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 537, 381 )
+rotation = 1.57079
+
+[node name="Rectangle5" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 258, 446 )
+rotation = 1.0472
+
+[node name="Rectangle6" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 405, 446 )
+
+[node name="Rectangle7" parent="Level5" instance=ExtResource( 9 )]
+position = Vector2( 477, 250 )
+rotation = 0.785397
+
+[node name="Square" parent="Level5" instance=ExtResource( 4 )]
+position = Vector2( 367, 320 )
+rotation = 0.785397
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="input_event" from="Level1/Square" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level1/Square2" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level1/Square3" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level1/Triangle" to="." method="_on_asserted_pressed"]
+[connection signal="input_event" from="Level2/Square" to="." method="_on_asserted_pressed"]
+[connection signal="input_event" from="Level2/Circle" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level2/Circle2" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level2/Circle3" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level2/Circle4" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level3/Square" to="." method="_on_asserted_pressed"]
+[connection signal="input_event" from="Level3/Triangle" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level3/Triangle2" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level3/Triangle3" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level3/Triangle4" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level3/Triangle5" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Square" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Square2" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Square3" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Square4" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Square5" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Square6" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level4/Circle" to="." method="_on_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle2" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle3" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle4" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle5" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle6" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Rectangle7" to="." method="_on_non_asserted_pressed"]
+[connection signal="input_event" from="Level5/Square" to="." method="_on_asserted_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

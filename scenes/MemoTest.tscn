@@ -1,0 +1,1269 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://assets/fruit_banana.png" type="Texture" id=1]
+[ext_resource path="res://assets/Pencil.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Redkost.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/sss.png" type="Texture" id=4]
+[ext_resource path="res://assets/apple.png" type="Texture" id=5]
+[ext_resource path="res://assets/spr_turbo_0.png" type="Texture" id=6]
+[ext_resource path="res://assets/bear.png" type="Texture" id=7]
+[ext_resource path="res://assets/11954412511420549680molumen_Fish_.svg.med.png" type="Texture" id=8]
+[ext_resource path="res://assets/heart.png" type="Texture" id=9]
+[ext_resource path="res://assets/Bee_0000_Capa-1.png" type="Texture" id=10]
+[ext_resource path="res://assets/strawberry.png" type="Texture" id=11]
+[ext_resource path="res://scripts/MemoTest.gd" type="Script" id=12]
+[ext_resource path="res://scenes/BaseScene.tscn" type="PackedScene" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 3 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 45, 45 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 45, 45 )
+
+[node name="MemoTest" type="Node2D"]
+script = ExtResource( 12 )
+
+[node name="BaseScene" parent="." instance=ExtResource( 13 )]
+
+[node name="OneNumber" type="Area2D" parent="."]
+position = Vector2( 455, 99 )
+
+[node name="Selection" type="ColorRect" parent="OneNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="OneNumber"]
+margin_left = -10.0
+margin_top = -30.0
+margin_right = 20.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OneNumber"]
+shape = SubResource( 2 )
+
+[node name="TwoNumber" type="Area2D" parent="."]
+position = Vector2( 154, 200 )
+
+[node name="Selection" type="ColorRect" parent="TwoNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TwoNumber"]
+margin_left = -47.0
+margin_top = -30.0
+margin_right = -7.0
+margin_bottom = 55.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TwoNumber"]
+shape = SubResource( 3 )
+
+[node name="ThreeNumber" type="Area2D" parent="."]
+position = Vector2( 354, 400 )
+
+[node name="Selection" type="ColorRect" parent="ThreeNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ThreeNumber"]
+margin_left = -47.0
+margin_top = -30.0
+margin_right = -7.0
+margin_bottom = 55.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThreeNumber"]
+shape = SubResource( 4 )
+
+[node name="FourNumber" type="Area2D" parent="."]
+position = Vector2( 154, 400 )
+
+[node name="Selection" type="ColorRect" parent="FourNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FourNumber"]
+margin_left = -47.0
+margin_top = -30.0
+margin_right = -7.0
+margin_bottom = 55.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FourNumber"]
+shape = SubResource( 5 )
+
+[node name="FiveNumber" type="Area2D" parent="."]
+position = Vector2( 354, 200 )
+
+[node name="Selection" type="ColorRect" parent="FiveNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FiveNumber"]
+margin_left = -47.0
+margin_top = -30.0
+margin_right = -7.0
+margin_bottom = 55.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FiveNumber"]
+shape = SubResource( 6 )
+
+[node name="SixNumber" type="Area2D" parent="."]
+position = Vector2( 254, 99 )
+
+[node name="Selection" type="ColorRect" parent="SixNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SixNumber"]
+margin_left = -50.0
+margin_top = -23.0
+margin_right = -10.0
+margin_bottom = 41.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SixNumber"]
+shape = SubResource( 7 )
+
+[node name="SevenNumber" type="Area2D" parent="."]
+position = Vector2( 454, 300 )
+
+[node name="Selection" type="ColorRect" parent="SevenNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SevenNumber"]
+margin_left = -50.0
+margin_top = -24.0
+margin_right = -10.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "7"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SevenNumber"]
+shape = SubResource( 8 )
+
+[node name="EightNumber" type="Area2D" parent="."]
+position = Vector2( 454, 500 )
+
+[node name="Selection" type="ColorRect" parent="EightNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="EightNumber"]
+margin_left = -50.0
+margin_top = -24.0
+margin_right = -10.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "8"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EightNumber"]
+shape = SubResource( 9 )
+
+[node name="NineNumber" type="Area2D" parent="."]
+position = Vector2( 254, 300 )
+
+[node name="Selection" type="ColorRect" parent="NineNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="NineNumber"]
+margin_left = -50.0
+margin_top = -24.0
+margin_right = -10.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2.45, 0.689851 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "9"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NineNumber"]
+shape = SubResource( 10 )
+
+[node name="TenNumber" type="Area2D" parent="."]
+position = Vector2( 254, 500 )
+
+[node name="Selection" type="ColorRect" parent="TenNumber"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TenNumber"]
+margin_left = -43.0
+margin_top = -32.0
+margin_right = 14.0
+margin_bottom = 32.0
+rect_scale = Vector2( 1.5, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0588235, 0.0509804, 0.960784, 1 )
+text = "10"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TenNumber"]
+shape = SubResource( 11 )
+
+[node name="OneItem" type="Area2D" parent="."]
+position = Vector2( 254, 400 )
+
+[node name="Selection" type="ColorRect" parent="OneItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+mouse_filter = 2
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="OneItem"]
+margin_left = -38.0
+margin_top = -45.0
+margin_right = 912.0
+margin_bottom = 1089.0
+rect_scale = Vector2( 0.08, 0.08 )
+mouse_filter = 2
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OneItem"]
+shape = SubResource( 12 )
+
+[node name="TwoItem" type="Area2D" parent="."]
+position = Vector2( 354, 300 )
+
+[node name="Selection" type="ColorRect" parent="TwoItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+mouse_filter = 2
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="TwoItem"]
+margin_left = -35.0
+margin_top = -41.0
+margin_right = 253.0
+margin_bottom = 76.0
+rect_scale = Vector2( 0.25, 0.25 )
+mouse_filter = 2
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="TwoItem"]
+margin_left = -35.0
+margin_top = 4.0
+margin_right = 253.0
+margin_bottom = 121.0
+rect_scale = Vector2( 0.25, 0.25 )
+mouse_filter = 2
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TwoItem"]
+shape = SubResource( 13 )
+
+[node name="ThreeItem" type="Area2D" parent="."]
+position = Vector2( 455, 200 )
+
+[node name="Selection" type="ColorRect" parent="ThreeItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="ThreeItem"]
+margin_left = -36.0
+margin_top = -38.0
+margin_right = 249.0
+margin_bottom = 212.0
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="ThreeItem"]
+margin_left = -22.0
+margin_top = -21.0
+margin_right = 263.0
+margin_bottom = 229.0
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="ThreeItem"]
+margin_left = -6.0
+margin_top = 1.0
+margin_right = 279.0
+margin_bottom = 251.0
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThreeItem"]
+shape = SubResource( 14 )
+
+[node name="FourItem" type="Area2D" parent="."]
+position = Vector2( 154, 100 )
+
+[node name="Selection" type="ColorRect" parent="FourItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="FourItem"]
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 755.0
+margin_bottom = 755.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_filter = 2
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="FourItem"]
+margin_left = 5.0
+margin_top = -45.0
+margin_right = 805.0
+margin_bottom = 755.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_filter = 2
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="FourItem"]
+margin_left = -45.0
+margin_top = 5.0
+margin_right = 755.0
+margin_bottom = 805.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_filter = 2
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="FourItem"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 805.0
+margin_bottom = 805.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_filter = 2
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FourItem"]
+shape = SubResource( 15 )
+
+[node name="FiveItem" type="Area2D" parent="."]
+position = Vector2( 454, 400 )
+
+[node name="Selection" type="ColorRect" parent="FiveItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="FiveItem"]
+margin_left = -42.0
+margin_top = -41.0
+margin_right = -1.0
+margin_bottom = -1.0
+rect_scale = Vector2( 0.8, 0.8 )
+mouse_filter = 2
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="FiveItem"]
+margin_left = 8.0
+margin_top = -41.0
+margin_right = 49.0
+margin_bottom = -1.0
+rect_scale = Vector2( 0.8, 0.8 )
+mouse_filter = 2
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="FiveItem"]
+margin_left = -17.0
+margin_top = -11.0
+margin_right = 24.0
+margin_bottom = 29.0
+rect_scale = Vector2( 0.8, 0.8 )
+mouse_filter = 2
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="FiveItem"]
+margin_left = -42.0
+margin_top = 14.0
+margin_right = -1.0
+margin_bottom = 54.0
+rect_scale = Vector2( 0.8, 0.8 )
+mouse_filter = 2
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="FiveItem"]
+margin_left = 8.0
+margin_top = 14.0
+margin_right = 49.0
+margin_bottom = 54.0
+rect_scale = Vector2( 0.8, 0.8 )
+mouse_filter = 2
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FiveItem"]
+shape = SubResource( 16 )
+
+[node name="SixItem" type="Area2D" parent="."]
+position = Vector2( 154, 300 )
+
+[node name="Selection" type="ColorRect" parent="SixItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="SixItem"]
+margin_left = -37.0
+margin_top = -30.0
+margin_right = 263.0
+margin_bottom = 94.0
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="SixItem"]
+margin_left = 8.0
+margin_top = -30.0
+margin_right = 308.0
+margin_bottom = 94.0
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="SixItem"]
+margin_left = -37.0
+margin_top = -5.0
+margin_right = 263.0
+margin_bottom = 119.0
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="SixItem"]
+margin_left = 8.0
+margin_top = -5.0
+margin_right = 308.0
+margin_bottom = 119.0
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="SixItem"]
+margin_left = -37.0
+margin_top = 20.0
+margin_right = 263.0
+margin_bottom = 144.0
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="SixItem"]
+margin_left = 8.0
+margin_top = 20.0
+margin_right = 308.0
+margin_bottom = 144.0
+rect_scale = Vector2( 0.1, 0.1 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SixItem"]
+shape = SubResource( 17 )
+
+[node name="SevenItem" type="Area2D" parent="."]
+position = Vector2( 254, 200 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Selection" type="ColorRect" parent="SevenItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="SevenItem"]
+margin_left = -4.0
+margin_top = -17.0
+margin_right = 1196.0
+margin_bottom = 609.0
+rect_rotation = 157.672
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="SevenItem"]
+margin_left = -8.0
+margin_top = -1.0
+margin_right = 1192.0
+margin_bottom = 625.0
+rect_rotation = -89.4945
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="SevenItem"]
+margin_left = 48.0
+margin_top = -24.0
+margin_right = 1248.0
+margin_bottom = 602.0
+rect_rotation = 138.615
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="SevenItem"]
+margin_left = -39.0
+margin_top = -4.0
+margin_right = 1161.0
+margin_bottom = 622.0
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="SevenItem"]
+margin_left = 22.0
+margin_top = 29.0
+margin_right = 1222.0
+margin_bottom = 655.0
+rect_rotation = -123.784
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="SevenItem"]
+margin_left = 7.0
+margin_top = 21.0
+margin_right = 1207.0
+margin_bottom = 647.0
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="SevenItem"]
+margin_left = 6.0
+margin_top = 36.0
+margin_right = 1206.0
+margin_bottom = 662.0
+rect_rotation = 170.536
+rect_scale = Vector2( 0.03, 0.03 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SevenItem"]
+shape = SubResource( 18 )
+
+[node name="EightItem" type="Area2D" parent="."]
+position = Vector2( 154, 500 )
+
+[node name="Selection" type="ColorRect" parent="EightItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="EightItem"]
+margin_left = -32.0
+margin_top = -35.0
+margin_right = 93.0
+margin_bottom = 90.0
+rect_rotation = 21.7367
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="EightItem"]
+margin_left = -7.0
+margin_right = 118.0
+margin_bottom = 125.0
+rect_rotation = -143.084
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="EightItem"]
+margin_left = -3.0
+margin_top = -35.0
+margin_right = 122.0
+margin_bottom = 90.0
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="EightItem"]
+margin_left = 7.0
+margin_top = -12.0
+margin_right = 132.0
+margin_bottom = 113.0
+rect_rotation = -37.5134
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="EightItem"]
+margin_left = -25.0
+margin_top = 15.0
+margin_right = 100.0
+margin_bottom = 140.0
+rect_rotation = -125.172
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="EightItem"]
+margin_left = 22.0
+margin_top = 1.0
+margin_right = 147.0
+margin_bottom = 126.0
+rect_rotation = 123.965
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="EightItem"]
+margin_left = -19.0
+margin_top = 33.0
+margin_right = 106.0
+margin_bottom = 158.0
+rect_rotation = -91.5735
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="EightItem"]
+margin_left = 26.0
+margin_top = 10.0
+margin_right = 151.0
+margin_bottom = 135.0
+rect_rotation = 47.3003
+rect_scale = Vector2( 0.15, 0.15 )
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EightItem"]
+shape = SubResource( 19 )
+
+[node name="NineItem" type="Area2D" parent="."]
+position = Vector2( 354, 500 )
+
+[node name="Selection" type="ColorRect" parent="NineItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="NineItem"]
+margin_left = -41.0
+margin_top = -41.0
+margin_right = -1.0
+margin_bottom = -1.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="NineItem"]
+margin_left = -11.0
+margin_top = -41.0
+margin_right = 29.0
+margin_bottom = -1.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="NineItem"]
+margin_left = 19.0
+margin_top = -41.0
+margin_right = 59.0
+margin_bottom = -1.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="NineItem"]
+margin_left = -41.0
+margin_top = -11.0
+margin_right = -1.0
+margin_bottom = 29.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="NineItem"]
+margin_left = -11.0
+margin_top = -11.0
+margin_right = 29.0
+margin_bottom = 29.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="NineItem"]
+margin_left = 19.0
+margin_top = -11.0
+margin_right = 59.0
+margin_bottom = 29.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="NineItem"]
+margin_left = -41.0
+margin_top = 19.0
+margin_right = -1.0
+margin_bottom = 59.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="NineItem"]
+margin_left = -11.0
+margin_top = 19.0
+margin_right = 29.0
+margin_bottom = 59.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect9" type="TextureRect" parent="NineItem"]
+margin_left = 19.0
+margin_top = 19.0
+margin_right = 59.0
+margin_bottom = 59.0
+rect_scale = Vector2( 0.7, 0.7 )
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NineItem"]
+shape = SubResource( 20 )
+
+[node name="TenItem" type="Area2D" parent="."]
+position = Vector2( 354, 99 )
+
+[node name="Selection" type="ColorRect" parent="TenItem"]
+visible = false
+margin_left = -45.0
+margin_top = -45.0
+margin_right = 45.0
+margin_bottom = 45.0
+color = Color( 0.117647, 0.945098, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="TenItem"]
+margin_left = -39.0
+margin_top = -40.0
+margin_right = 985.0
+margin_bottom = 937.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="TenItem"]
+margin_left = -9.0
+margin_top = -40.0
+margin_right = 1015.0
+margin_bottom = 937.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="TenItem"]
+margin_left = 21.0
+margin_top = -40.0
+margin_right = 1045.0
+margin_bottom = 937.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="TenItem"]
+margin_left = -24.0
+margin_top = -20.0
+margin_right = 1000.0
+margin_bottom = 957.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="TenItem"]
+margin_left = 6.0
+margin_top = -20.0
+margin_right = 1030.0
+margin_bottom = 957.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="TenItem"]
+margin_left = -24.0
+margin_top = 3.0
+margin_right = 1000.0
+margin_bottom = 980.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="TenItem"]
+margin_left = 6.0
+margin_top = 3.0
+margin_right = 1030.0
+margin_bottom = 980.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="TenItem"]
+margin_left = -39.0
+margin_top = 25.0
+margin_right = 985.0
+margin_bottom = 1002.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect9" type="TextureRect" parent="TenItem"]
+margin_left = -9.0
+margin_top = 25.0
+margin_right = 1015.0
+margin_bottom = 1002.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect10" type="TextureRect" parent="TenItem"]
+margin_left = 21.0
+margin_top = 25.0
+margin_right = 1045.0
+margin_bottom = 1002.0
+rect_scale = Vector2( 0.015, 0.015 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TenItem"]
+shape = SubResource( 21 )
+[connection signal="input_event" from="OneNumber" to="." method="_on_One_Number_pressed"]
+[connection signal="input_event" from="TwoNumber" to="." method="_on_Two_Number_pressed"]
+[connection signal="input_event" from="ThreeNumber" to="." method="_on_Three_Number_pressed"]
+[connection signal="input_event" from="FourNumber" to="." method="_on_Four_Number_pressed"]
+[connection signal="input_event" from="FiveNumber" to="." method="_on_Five_Number_pressed"]
+[connection signal="input_event" from="SixNumber" to="." method="_on_Six_Number_pressed"]
+[connection signal="input_event" from="SevenNumber" to="." method="_on_Seven_Number_pressed"]
+[connection signal="input_event" from="EightNumber" to="." method="_on_Eight_Number_pressed"]
+[connection signal="input_event" from="NineNumber" to="." method="_on_Nine_Number_pressed"]
+[connection signal="input_event" from="TenNumber" to="." method="_on_Ten_Number_pressed"]
+[connection signal="input_event" from="OneItem" to="." method="_on_One_Item_pressed"]
+[connection signal="input_event" from="TwoItem" to="." method="_on_Two_Item_pressed"]
+[connection signal="input_event" from="ThreeItem" to="." method="_on_Three_Item_pressed"]
+[connection signal="input_event" from="FourItem" to="." method="_on_Four_Item_pressed"]
+[connection signal="input_event" from="FiveItem" to="." method="_on_Five_Item_pressed"]
+[connection signal="input_event" from="SixItem" to="." method="_on_Six_Item_pressed"]
+[connection signal="input_event" from="SevenItem" to="." method="_on_Seven_Item_pressed"]
+[connection signal="input_event" from="EightItem" to="." method="_on_Eight_Item_pressed"]
+[connection signal="input_event" from="NineItem" to="." method="_on_Nine_Item_pressed"]
+[connection signal="input_event" from="TenItem" to="." method="_on_Ten_Item_pressed"]

@@ -1,0 +1,905 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://assets/diceFour.png" type="Texture" id=1]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/White.png" type="Texture" id=3]
+[ext_resource path="res://music/CHIPTUNE_Loop_Minstrel_Dance_0.wav" type="AudioStream" id=4]
+[ext_resource path="res://music/win sound 1.wav" type="AudioStream" id=5]
+[ext_resource path="res://music/ALERT_Error.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/diceOne.png" type="Texture" id=9]
+[ext_resource path="res://assets/background.jpg" type="Texture" id=10]
+[ext_resource path="res://assets/diceTwo.png" type="Texture" id=11]
+[ext_resource path="res://assets/diceSix.png" type="Texture" id=12]
+[ext_resource path="res://assets/diceThree.png" type="Texture" id=13]
+[ext_resource path="res://assets/diceFive.png" type="Texture" id=14]
+[ext_resource path="res://scripts/Game.gd" type="Script" id=15]
+[ext_resource path="res://scenes/Wrong.tscn" type="PackedScene" id=17]
+[ext_resource path="res://fonts/Redkost.otf" type="DynamicFontData" id=19]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 28, 30 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 55
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 50
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 50
+font_data = ExtResource( 19 )
+
+[node name="Dominoe" type="Node2D"]
+script = ExtResource( 15 )
+
+[node name="Background" type="Node2D" parent="."]
+position = Vector2( 511.9, 300 )
+scale = Vector2( 1.41, 1.24 )
+
+[node name="Sprite" type="Sprite" parent="Background"]
+texture = ExtResource( 10 )
+
+[node name="Piezas" type="Node2D" parent="."]
+position = Vector2( 44.142, 26 )
+
+[node name="Pieza" type="Node2D" parent="Piezas"]
+position = Vector2( 90, 59 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza"]
+rotation = -1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 264, 0.00699997, 64, 129.993 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza"]
+margin_left = 8.66667
+margin_top = -23.8333
+margin_right = 48.6667
+margin_bottom = 29.1667
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza2" type="Node2D" parent="Piezas"]
+position = Vector2( 185, 92 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza2"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 131, 0, 66, 129 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza2"]
+margin_left = -20.8333
+margin_top = 5.0
+margin_right = 19.1667
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza3" type="Node2D" parent="Piezas"]
+position = Vector2( 281, 121 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza3"]
+rotation = -1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 396, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza3"]
+margin_left = 10.3333
+margin_top = -23.8333
+margin_right = 50.3333
+margin_bottom = 29.1667
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza4" type="Node2D" parent="Piezas"]
+position = Vector2( 378, 154 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza4"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 66, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza4"]
+margin_left = -21.0
+margin_top = 6.0
+margin_right = 19.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza5" type="Node2D" parent="Piezas"]
+position = Vector2( 345, 251 )
+rotation = -1.5708
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza5"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 128 )
+
+[node name="Sprite2" type="Sprite" parent="Piezas/Pieza5"]
+visible = false
+rotation = -3.14159
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 198, 0, 64, 128 )
+
+[node name="Area2" type="Area2D" parent="Piezas/Pieza5"]
+position = Vector2( -1.00012, 32 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza5/Area2"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza5/Area2" instance=ExtResource( 17 )]
+
+[node name="Timer" type="Timer" parent="Piezas/Pieza5/Area2/Wrong"]
+
+[node name="Label" type="Label" parent="Piezas/Pieza5"]
+margin_left = 24.0
+margin_top = -50.0
+margin_right = 64.0
+margin_bottom = 3.0
+rect_rotation = 90.0
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza6" type="Node2D" parent="Piezas"]
+position = Vector2( 214.5, 251 )
+rotation = -1.5708
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza6"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 128 )
+
+[node name="Sprite2" type="Sprite" parent="Piezas/Pieza6"]
+visible = false
+rotation = -3.14159
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 330, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza6"]
+visible = false
+margin_left = 23.9447
+margin_top = -52.0511
+margin_right = 63.9447
+margin_bottom = 0.948898
+rect_rotation = 90.0
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area1" type="Area2D" parent="Piezas/Pieza6"]
+position = Vector2( -0.0553894, -33.18 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza6/Area1"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza6/Area1" instance=ExtResource( 17 )]
+
+[node name="Timer2" type="Timer" parent="Piezas/Pieza6/Area1/Wrong"]
+
+[node name="Area2" type="Area2D" parent="Piezas/Pieza6"]
+position = Vector2( -1.52588e-05, 31.1454 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza6/Area2"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza6/Area2" instance=ExtResource( 17 )]
+
+[node name="Timer3" type="Timer" parent="Piezas/Pieza6/Area2/Wrong"]
+
+[node name="Pieza7" type="Node2D" parent="Piezas"]
+position = Vector2( 117.167, 283.333 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza7"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 198, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza7"]
+margin_left = -19.1667
+margin_top = 5.83333
+margin_right = 20.8333
+margin_bottom = 58.8333
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza8" type="Node2D" parent="Piezas"]
+position = Vector2( 148.167, 379.833 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza8"]
+rotation = 1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 128 )
+
+[node name="Sprite2" type="Sprite" parent="Piezas/Pieza8"]
+visible = false
+position = Vector2( 3.1474, 0.316193 )
+rotation = -1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 264, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza8"]
+visible = false
+margin_left = 11.4806
+margin_top = -26.6654
+margin_right = 51.4806
+margin_bottom = 26.3346
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area1" type="Area2D" parent="Piezas/Pieza8"]
+position = Vector2( -31.8526, 0.3162 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza8/Area1"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza8/Area1" instance=ExtResource( 17 )]
+
+[node name="Timer4" type="Timer" parent="Piezas/Pieza8/Area1/Wrong"]
+
+[node name="Area2" type="Area2D" parent="Piezas/Pieza8"]
+position = Vector2( 32.3139, -1.66544 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza8/Area2"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza8/Area2" instance=ExtResource( 17 )]
+
+[node name="Timer5" type="Timer" parent="Piezas/Pieza8/Area2/Wrong"]
+
+[node name="Pieza9" type="Node2D" parent="Piezas"]
+position = Vector2( 280.333, 379 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza9"]
+rotation = -1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 330, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza9"]
+margin_left = 10.3333
+margin_top = -23.8333
+margin_right = 50.3333
+margin_bottom = 29.1667
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza10" type="Node2D" parent="Piezas"]
+position = Vector2( 376.976, 411.78 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza10"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 128 )
+
+[node name="Sprite2" type="Sprite" parent="Piezas/Pieza10"]
+visible = false
+position = Vector2( -2.03909, 0.64621 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 132, 0, 64, 128 )
+
+[node name="Area1" type="Area2D" parent="Piezas/Pieza10"]
+position = Vector2( -1.03909, -31.3538 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza10/Area1"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza10/Area1" instance=ExtResource( 17 )]
+
+[node name="Timer6" type="Timer" parent="Piezas/Pieza10/Area1/Wrong"]
+
+[node name="Label" type="Label" parent="Piezas/Pieza10"]
+margin_left = -20.0
+margin_top = 7.0
+margin_right = 20.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pieza11" type="Node2D" parent="Piezas"]
+position = Vector2( 345.885, 508.43 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza11"]
+rotation = 1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 128 )
+
+[node name="Sprite2" type="Sprite" parent="Piezas/Pieza11"]
+visible = false
+position = Vector2( -0.0668945, -0.791687 )
+rotation = 1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 396, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza11"]
+visible = false
+margin_left = -51.5666
+margin_top = -27.9866
+margin_right = -11.5666
+margin_bottom = 25.0134
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area1" type="Area2D" parent="Piezas/Pieza11"]
+position = Vector2( -30.5666, 0.0134277 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza11/Area1"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza11/Area1" instance=ExtResource( 17 )]
+
+[node name="Timer7" type="Timer" parent="Piezas/Pieza11/Area1/Wrong"]
+
+[node name="Area2" type="Area2D" parent="Piezas/Pieza11"]
+position = Vector2( 31.9331, 1.20831 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piezas/Pieza11/Area2"]
+shape = SubResource( 5 )
+
+[node name="Wrong" parent="Piezas/Pieza11/Area2" instance=ExtResource( 17 )]
+
+[node name="Timer8" type="Timer" parent="Piezas/Pieza11/Area2/Wrong"]
+
+[node name="Pieza12" type="Node2D" parent="Piezas"]
+position = Vector2( 215, 507.597 )
+
+[node name="Sprite" type="Sprite" parent="Piezas/Pieza12"]
+rotation = 1.5708
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 264, 0, 64, 128 )
+
+[node name="Label" type="Label" parent="Piezas/Pieza12"]
+margin_left = -50.0
+margin_top = -26.6667
+margin_right = -10.0
+margin_bottom = 26.3333
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Numbers" type="Control" parent="."]
+margin_left = 930.0
+margin_top = 65.0
+margin_right = 970.0
+margin_bottom = 105.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Numbers"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 12 )
+color = Color( 0.894118, 1, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="One" type="Control" parent="Numbers"]
+margin_left = 25.0
+margin_top = 16.0
+margin_right = 65.0
+margin_bottom = 56.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="ColorRect" parent="Numbers/One"]
+visible = false
+margin_right = 30.0
+margin_bottom = 60.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="Numbers/One"]
+margin_right = 34.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 14 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "1"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Two" type="Control" parent="Numbers"]
+margin_left = 22.0
+margin_top = 94.0
+margin_right = 62.0
+margin_bottom = 134.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="ColorRect" parent="Numbers/Two"]
+visible = false
+margin_right = 40.0
+margin_bottom = 60.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="Numbers/Two"]
+margin_right = 44.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 15 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "2"
+flat = true
+
+[node name="Three" type="Control" parent="Numbers"]
+margin_left = 22.0
+margin_top = 178.0
+margin_right = 62.0
+margin_bottom = 218.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="ColorRect" parent="Numbers/Three"]
+visible = false
+margin_right = 40.0
+margin_bottom = 60.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="Numbers/Three"]
+margin_right = 43.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "3"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Four" type="Control" parent="Numbers"]
+margin_left = 22.0
+margin_top = 256.0
+margin_right = 62.0
+margin_bottom = 296.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="ColorRect" parent="Numbers/Four"]
+visible = false
+margin_right = 40.0
+margin_bottom = 60.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+
+[node name="Button4" type="Button" parent="Numbers/Four"]
+margin_right = 39.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 17 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "4"
+flat = true
+
+[node name="Five" type="Control" parent="Numbers"]
+margin_left = 22.0
+margin_top = 334.0
+margin_right = 62.0
+margin_bottom = 374.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="ColorRect" parent="Numbers/Five"]
+visible = false
+margin_right = 40.0
+margin_bottom = 60.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+
+[node name="Button5" type="Button" parent="Numbers/Five"]
+margin_right = 38.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 18 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "5"
+flat = true
+
+[node name="Six" type="Control" parent="Numbers"]
+margin_left = 22.0
+margin_top = 412.0
+margin_right = 62.0
+margin_bottom = 452.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selection" type="ColorRect" parent="Numbers/Six"]
+visible = false
+margin_right = 40.0
+margin_bottom = 60.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="Numbers/Six"]
+margin_right = 40.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 19 )
+custom_colors/font_color = Color( 0.976471, 0, 0, 1 )
+text = "6"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dices" type="Control" parent="."]
+margin_left = 830.0
+margin_right = 870.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="Dices"]
+margin_top = 65.0
+margin_right = 40.0
+margin_bottom = 105.0
+rect_scale = Vector2( 2, 12 )
+color = Color( 0.894118, 1, 0.156863, 1 )
+
+[node name="Dice1" type="Control" parent="Dices"]
+margin_left = 8.0
+margin_top = 82.0
+margin_right = 48.0
+margin_bottom = 122.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceSelection" type="ColorRect" parent="Dices/Dice1"]
+visible = false
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 70.0
+margin_bottom = 70.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceButton1" type="TextureButton" parent="Dices/Dice1"]
+margin_right = 416.0
+margin_bottom = 416.0
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dice2" type="Control" parent="Dices"]
+margin_left = 8.0
+margin_top = 160.0
+margin_right = 48.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceSelection" type="ColorRect" parent="Dices/Dice2"]
+visible = false
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 70.0
+margin_bottom = 70.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+
+[node name="DiceButton2" type="TextureButton" parent="Dices/Dice2"]
+margin_right = 416.0
+margin_bottom = 416.0
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 11 )
+
+[node name="Dice3" type="Control" parent="Dices"]
+margin_left = 8.0
+margin_top = 238.0
+margin_right = 48.0
+margin_bottom = 278.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceSelection" type="ColorRect" parent="Dices/Dice3"]
+visible = false
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 70.0
+margin_bottom = 70.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceButton3" type="TextureButton" parent="Dices/Dice3"]
+margin_top = 0.0709839
+margin_right = 416.0
+margin_bottom = 416.071
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dice4" type="Control" parent="Dices"]
+margin_left = 8.0
+margin_top = 316.0
+margin_right = 48.0
+margin_bottom = 356.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceSelection" type="ColorRect" parent="Dices/Dice4"]
+visible = false
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 70.0
+margin_bottom = 70.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceButton4" type="TextureButton" parent="Dices/Dice4"]
+margin_right = 424.0
+margin_bottom = 424.0
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dice5" type="Control" parent="Dices"]
+margin_left = 8.0
+margin_top = 394.0
+margin_right = 48.0
+margin_bottom = 434.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceSelection" type="ColorRect" parent="Dices/Dice5"]
+visible = false
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 70.0
+margin_bottom = 70.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceButton5" type="TextureButton" parent="Dices/Dice5"]
+margin_right = 416.0
+margin_bottom = 416.071
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dice6" type="Control" parent="Dices"]
+margin_left = 8.0
+margin_top = 472.0
+margin_right = 48.0
+margin_bottom = 512.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceSelection" type="ColorRect" parent="Dices/Dice6"]
+visible = false
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 70.0
+margin_bottom = 70.0
+color = Color( 0.0509804, 0.0431373, 0.882353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DiceButton6" type="TextureButton" parent="Dices/Dice6"]
+margin_right = 416.0
+margin_bottom = 416.071
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HUD" parent="." instance=ExtResource( 2 )]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+autoplay = true
+
+[node name="SuccessSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = 24.0
+
+[node name="FailureSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+[connection signal="input_event" from="Piezas/Pieza5/Area2" to="." method="_on_Pieza5_Area2_input_event"]
+[connection signal="timeout" from="Piezas/Pieza5/Area2/Wrong/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="input_event" from="Piezas/Pieza6/Area1" to="." method="_on_Pieza6_Area1_input_event"]
+[connection signal="timeout" from="Piezas/Pieza6/Area1/Wrong/Timer2" to="." method="_on_Timer2_timeout"]
+[connection signal="input_event" from="Piezas/Pieza6/Area2" to="." method="_on_Pieza6_Area8_input_event"]
+[connection signal="timeout" from="Piezas/Pieza6/Area2/Wrong/Timer3" to="." method="_on_Timer3_timeout"]
+[connection signal="input_event" from="Piezas/Pieza8/Area1" to="." method="_on_Pieza8_Area1_input_event"]
+[connection signal="timeout" from="Piezas/Pieza8/Area1/Wrong/Timer4" to="." method="_on_Timer4_timeout"]
+[connection signal="input_event" from="Piezas/Pieza8/Area2" to="." method="_on_Pieza8_Area2_input_event"]
+[connection signal="timeout" from="Piezas/Pieza8/Area2/Wrong/Timer5" to="." method="_on_Timer5_timeout"]
+[connection signal="input_event" from="Piezas/Pieza10/Area1" to="." method="_on_Pieza10_Area1_input_event"]
+[connection signal="timeout" from="Piezas/Pieza10/Area1/Wrong/Timer6" to="." method="_on_Timer6_timeout"]
+[connection signal="input_event" from="Piezas/Pieza11/Area1" to="." method="_on_Pieza11_Area1_input_event"]
+[connection signal="timeout" from="Piezas/Pieza11/Area1/Wrong/Timer7" to="." method="_on_Timer7_timeout"]
+[connection signal="input_event" from="Piezas/Pieza11/Area2" to="." method="_on_Pieza11_Area2_input_event"]
+[connection signal="timeout" from="Piezas/Pieza11/Area2/Wrong/Timer8" to="." method="_on_Timer8_timeout"]
+[connection signal="button_down" from="Numbers/One/Button1" to="." method="_on_Button1_pressed"]
+[connection signal="button_down" from="Numbers/Two/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="button_down" from="Numbers/Three/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="button_down" from="Numbers/Four/Button4" to="." method="_on_Button4_pressed"]
+[connection signal="button_down" from="Numbers/Five/Button5" to="." method="_on_Button5_pressed"]
+[connection signal="button_down" from="Numbers/Six/Button6" to="." method="_on_Button6_pressed"]
+[connection signal="button_down" from="Dices/Dice1/DiceButton1" to="." method="_on_DiceButton1_pressed"]
+[connection signal="button_down" from="Dices/Dice2/DiceButton2" to="." method="_on_DiceButton2_pressed"]
+[connection signal="button_down" from="Dices/Dice3/DiceButton3" to="." method="_on_DiceButton3_pressed"]
+[connection signal="button_down" from="Dices/Dice4/DiceButton4" to="." method="_on_DiceButton4_pressed"]
+[connection signal="button_down" from="Dices/Dice5/DiceButton5" to="." method="_on_DiceButton5_pressed"]
+[connection signal="button_down" from="Dices/Dice6/DiceButton6" to="." method="_on_DiceButton6_pressed"]
